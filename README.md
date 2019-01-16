@@ -3,6 +3,8 @@
 [image_1]: img/gray.png
 [image_2]: img/blur_gray.png
 [image_3]: img/edge_detected.png
+[image_4]: img/masked_edges.png
+[image_5]: img/combo.png
 
 # **Finding Lane Lines on the Road**
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
@@ -46,3 +48,17 @@ Gaussian Blur is another pre-processing technique to smoothen the edges of an im
 Now, after pre-processed the image, we'll use popular **Canny Edge Detector**, whose role is to identify lines in an image and remove other datas. Below is the comparison of images after edge detection applied to our original blurred gray image.
 
 ![alt text][image_3]
+
+## Tracing region of interest
+
+Our next step is to choose a region of interest and remove every line outside of this region.
+
+![alt text][image_4]
+
+## Performing Hough Transform
+
+Next, we'll apply **Hough Transform** to extract lane lines and color them in red. For this, we will use openCV Hough Transform. You can find more information about the implementation of Hough Transform in OpenCV [here](https://docs.opencv.org/trunk/d6/d10/tutorial_py_houghlines.html).
+
+Below is the output result of the Hough Transform:
+
+![alt text][image_5]
