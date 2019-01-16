@@ -62,3 +62,9 @@ Next, we'll apply **Hough Transform** to extract lane lines and color them in re
 Below is the output result of the Hough Transform:
 
 ![alt text][image_5]
+
+## Future Improvements
+
+We can improve our pipeline by tuning different parameters, separating left and right lines by their slope and average the position of each of the lines and extrapolate to the top and bottom of the lane.
+
+Further more, we can also use deep learning to identify lane lines and compare the results against with this only Computer Vision approach.
