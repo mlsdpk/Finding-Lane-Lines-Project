@@ -1,6 +1,8 @@
 [//]: # (Image References)
 [image_0]: img/chosen_original_images.png
 [image_1]: img/gray.png
+[image_2]: img/blur_gray.png
+[image_3]: img/edge_detected.png
 
 # **Finding Lane Lines on the Road**
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
@@ -32,3 +34,15 @@ We'll cover in details of different steps to create our pipeline which will enab
 We'll convert our original RGB image to gray scale image. This can reduce noise from original three color channels. So, we can apply more powerful algorithms to isolate lines.
 
 ![alt text][image_1]
+
+## Applying Gaussian Blur to smoothen edges
+
+Gaussian Blur is another pre-processing technique to smoothen the edges of an image to reduce noise.
+
+![alt text][image_2]
+
+## Applying Canny Edge Detection on smoothed gray image
+
+Now, after pre-processed the image, we'll use popular **Canny Edge Detector**, whose role is to identify lines in an image and remove other datas. Below is the comparison of images after edge detection applied to our original blurred gray image.
+
+![alt text][image_3]
