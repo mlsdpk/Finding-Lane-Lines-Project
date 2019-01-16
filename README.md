@@ -1,5 +1,6 @@
 [//]: # (Image References)
 [image_0]: img/chosen_original_images.png
+[image_1]: img/gray.png
 
 # **Finding Lane Lines on the Road**
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
@@ -25,3 +26,9 @@ We'll cover in details of different steps to create our pipeline which will enab
 - Perform Hough Transform to find lane lines within our region of interest and trace them in red
 - Separate left and right lanes
 - Interpolate line gradients to create two smooth lines
+
+## Converting original image to gray scale
+
+We'll convert our original RGB image to gray scale image. This can reduce noise from original three color channels. So, we can apply more powerful algorithms to isolate lines.
+
+![alt text][image_1]
