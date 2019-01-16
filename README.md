@@ -11,7 +11,7 @@
 
 <img src="img/laneLines_thirdPass.jpg" width="480" alt="Combined Image" />
 
-The goal of the project is to create a pipeline that find lane lines on the road. We are going to use various Computer Vision techniques to identify lane lines in different situations. You can find the original Udacity repository of the project [here](https://github.com/udacity/CarND-LaneLines-P1).
+The goal of the project is to create a pipeline that find lane lines on the road. We are going to use various Computer Vision techniques to identify lane lines in different situations. You can find the original Udacity repository of the project [here](https://github.com/udacity/CarND-LaneLines-P1). You can also find code implementations in the [notebook](notebook.ipynb).
 
 ## Setup
 
